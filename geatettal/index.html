@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gæt et tal - Computer gætter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gæt et tal mellem 0 og 100</h1>
+        <p class="subtitle">Computeren gætter dit tal hurtigst muligt!</p>
+
+        <button id="startBtn">Start spil</button>
+
+        <div id="game" style="display:none;">
+            <p id="guess">Computeren gætter...</p>
+            <div class="actions">
+                <button id="tooLowBtn" disabled>For lavt</button>
+                <button id="tooHighBtn" disabled>For højt</button>
+                <button id="correctBtn" disabled>Korrekt!</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
